@@ -1,0 +1,1 @@
+[12-Apr-2009 13:09:07] PHP Fatal error:  Call to undefined function  get_header() in /home/flyingoc/public_html/wp-content/themes/classic/index.php on line 6

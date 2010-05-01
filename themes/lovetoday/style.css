@@ -1,0 +1,363 @@
+/*   
+Theme Name: Love Today
+Theme URI: http://bbs.geekaa.com/topic/view/4513.html
+Description: Simple and clean, absolutly pure, non image (except background) template focusing on Typography, HTML 5 + CSS 3 ! Some feature detail only display on Safari 4 and Opera 10, <a href="http://bbs.geekaa.com/topic/view/4513.html">more tips here</a>.
+Author: Lin Zhizhao @ 901 Studio
+Author URI: http://geekaa.com/901
+Version: 1.0.0
+Tags: light, white, one-column, fixed-width
+*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header, footer, section, aside, nav, article {
+	display: block;
+	margin: 20px 40px;
+}
+
+
+@font-face {
+  font-family: Oregon;
+  src: url(lib/f/Oregon.ttf);
+}
+
+@font-face {
+  font-family: OregonB;
+  src: url(lib/f/OregonB.ttf);
+}
+
+@font-face {
+  font-family: OregonBO;
+  src: url(lib/f/OregonBO.ttf);
+}
+
+@font-face {
+  font-family: OregonV;
+  src: url(lib/f/OregonV.ttf);
+}
+
+html{
+	background:#fff url(lib/i/bg.png);
+	padding-bottom: 36px;
+}
+
+body {
+	margin: 0 auto;
+	padding: 22px 0;
+	width: 580px;
+	font: 16px/150% Helvetica, Arial, sans-serif;
+	background: #fff;
+	box-shadow: 0 5px 10px #a6a6a6;
+	-webkit-box-shadow: 0 5px 10px #a6a6a6;
+	-moz-box-shadow: 0 5px 10px #a6a6a6;
+	opacity: 0.9;                    /* Opacity for Firefox, Safari(WebKit), Opera */
+   	-ms-filter: "alpha(opacity=90)"; /* Opacity for IE 8 */
+   	filter: alpha(opacity=90); 
+}
+
+.safari, .opera{
+	font-family: Oregon, Helvetica, Arial, sans-serif;
+}
+
+p{
+	margin-bottom: 0.75em;
+	font-size: 1em;
+}
+
+a{
+	color: #000;
+	background: inherit;
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: oblique;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.safari a, .opera a{
+	font-family: OregonBO, Helvetica, Arial, sans-serif;
+}
+
+
+a:hover{
+	color: #555;
+	background: inherit;
+	font-family: Helvetica, Arial, sans-serif;
+	font-style:oblique;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.safari a:hover, .opera a:hover{
+	font-family: OregonBO, Helvetica, Arial, sans-serif;
+}
+
+
+a:active{
+	color: #000
+}
+
+header{
+	margin: 48px 40px 10px 40px;
+	font-family: OregonV, Helvetica, Arial, sans-serif;
+}
+
+header a{
+	font-family: Helvetica, Arial, sans-serif;
+	font-style:normal;
+}
+
+.safari header a, .opera header a{
+	font-family: OregonV, Helvetica, Arial, sans-serif;
+}
+
+header a:hover{
+	color: #555;
+	background: inherit;
+	font-family: Helvetica, Arial, sans-serif;
+	font-style:normal;
+	text-decoration: none;
+}
+
+.safari header a:hover, .opera header a:hover{
+	font-family: OregonV, Helvetica, Arial, sans-serif;
+}
+
+header h1{
+	font-size: 72px;
+	line-height: 90%;
+}
+
+aside{
+	margin-top: 4em;
+}
+
+aside section{
+	margin: 3em 0 1em 0;
+}
+
+aside section ul li{
+	margin-left: 20px;
+}
+
+aside section header{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.safari aside section header, .opera aside section header{
+	font-family: OregonB, Helvetica, Arial, sans-serif;
+}
+
+section article, section header{margin: 1em 0 1em 0}
+
+section article{
+	margin-bottom: 2em;
+}
+
+section header a{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px
+}
+
+.safari section header a, .opera section header a{
+	font-family: OregonB, Helvetica, Arial, sans-serif;
+}
+
+section header a:hover{
+	color: #555;
+	background: inherit;
+	font-family: Helvetica, Arial, sans-serif;
+	font-style:normal;
+	text-decoration: none;
+}
+
+.safari section header a:hover, .opera section header a:hover{
+	font-family: OregonB, Helvetica, Arial, sans-serif;
+}
+
+
+section#description{
+	margin: 40px; margin-top: 10px;
+	font-size: 14px;
+}
+
+#wp-calendar td{
+	width: 2em;
+	text-align: center
+}
+
+#wp-calendar td#prev{
+	text-align: left
+}
+
+#wp-calendar td#next{
+	text-align: right
+}
+
+.whowhen{
+	text-align: right;
+	margin:1em 0 0 0;
+}
+.catcom{
+	text-align: right;
+	margin: 0 0 3em 0;
+	font-size: 0.75em;
+}
+.postnav{
+	margin-left: 0;
+}
+
+.entry-title{}
+
+section nav{
+	margin-left: 0;
+	padding-left: 0
+}
+
+.xoxo li{
+	margin-left: 20px;
+}
+
+.xoxo h3{
+	margin: 1em 0 0 0;
+}
+
+textarea#comment{
+	width: 100%
+}
+
+#themedesign{
+	font-size: 12px;
+}
+
+footer{
+	margin-top: 4em;
+}
+
+footer p{
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+aside nav{
+	margin-left: 0;
+	margin-right: 0
+}
+
+aside nav li.pagenav, aside nav li.categories, aside nav li.linkcat {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	margin-bottom: 10px;
+	list-style: none;	
+}
+
+.safari aside nav li.pagenav, .safari aside nav li.categories, .opera aside nav li.pagenav, .opera aside nav li.categories, .safari aside nav li.linkcat, .opera aside nav li.linkcat{
+	font-family: OregonB, Helvetica, Arial, sans-serif;
+}
+
+aside nav li.pagenav ul, aside nav li.categories ul, aside nav li.linkcat ul{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-top: 10px;	
+}
+
+.safari aside nav li.pagenav ul, .safari aside nav li.categories ul, .opera aside nav li.pagenav ul, .opera aside nav li.categories ul, .safari aside nav li.linkcat ul, .opera aside nav li.linkcat ul{
+	font-family: Oregon, Helvetica, Arial, sans-serif;	
+}
+
+aside nav li.pagenav ul li ul, aside nav li.categories ul li ul, aside nav li.linkcat ul li ul{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+aside nav{margin-bottom: 3em}
+
+h3#comments, #respond h3{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0.75em;
+	margin-top: 2em;
+}
+
+.safari h3#comments, .safari #respond h3, .opera h3#comments, .opera #respond h3{
+	font-family: OregonB, Helvetica, Arial, sans-serif;
+}
+
+.comment-meta a{
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.commentlist{
+	margin-left: 20px
+}
+
+.commentlist li{margin-bottom: 1.5em}
+
+
+/* Captions & aligment from wordpress classic theme */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+/* End captions & aligment */
+
+img.alignleft{
+	margin-right: 1em;
+}
+
+img.alignright{
+	margin-left: 1em;
+}
+
+a img{
+	border: none
+}
+
+.blogroll li{
+	font-size: 18px;
+	margin-left: 0
+}

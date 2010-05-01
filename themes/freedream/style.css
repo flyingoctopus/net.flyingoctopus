@@ -1,0 +1,415 @@
+﻿/*
+Theme Name: FreeDream
+Theme URI: http://dreamgratuit.canalblog.com/archives/2009/11/17/15836058.html
+Description: A theme presented by Dreamweaver Gratuit. FreeDream is a clean and simple theme using HTML5 and CSS3 properties. This theme works fine on every current versions of MSIE (6, 7 and 8), Firefox and Safari. 
+Version: 1.3
+Author: Caroline Monmerqué
+Author URI: http://dreamgratuit.canalblog.com
+Tags: brown, blue, fixed-width, two-columns
+
+This theme was designed and built by Caroline Monmerqué,
+whose blog you will find at http://dreamgratuit.canalblog.com/
+
+The CSS, XHTML and design is released under GPL:
+http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+
+/* ******************************************************** */
+/* VERY IMPORTANT : for HTML5 tags. Do NOT remove the code  */
+/* below. All unknown tags are interpreted by default as    */
+/* "display:inline"                                         */
+/* ******************************************************** */
+ 
+header, hgroup, section, footer, aside, nav, article { 
+	display: block;   
+}
+
+
+/* GENERAL */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	background-image:url(images/background.gif);
+	background-repeat:no-repeat;
+	background-position:center top;
+	color: #333;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+#container {
+	background: none;
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* The page header     */
+/* ******************* */
+/* applied to <header> */
+
+#logo {
+	padding-top:40px;
+}
+#logo h1 {
+	font:bold 50px Tahoma, Geneva, sans-serif;
+	letter-spacing: 10px;
+	margin: 0 0 0 260px;
+}
+#logo h1 a {
+	color:#000;
+	text-decoration: none;
+}
+#logo h2 {
+	font:normal 12px Arial, Helvetica, sans-serif;
+	margin: 0 0 20px 265px;
+	text-align:left;
+	color:#666;
+}
+#pages { 
+	float:right;
+}
+#navlist, #navlist ul  {
+	padding : 0; 
+	margin : 0; 
+	list-style : none; 
+	line-height : 21px; 
+	text-align : center; 
+}
+#navlist {
+	font-family: Tahoma, Geneva, sans-serif; 
+	font-size : 11px;
+	text-transform:uppercase;
+	letter-spacing: 3px;
+}
+#navlist a {
+	display : block; 
+	padding : 0;
+	background : #8ddee0;       
+	color : #785430;
+	text-decoration : none; 
+	width : 110px;
+	padding: 3px;
+}
+#navlist a:hover {
+	color: #8ddee0; 
+	background: #785430; 
+}
+#navlist li { 
+	float : left; 
+	border-right : 1px solid #fff; 
+}
+html>body #navlist li{
+	border-right: 1px solid transparent ; 
+}
+#navlist li ul { 
+	position: absolute; 
+	width: 110px; 
+	left: -999em; 
+}
+#navlist li ul li {
+	border-top : 1px solid #fff; 
+}
+html>body #navlist li ul li {
+	border-top : 1px solid transparent; 
+}
+
+#navlist li ul ul  {
+	margin : -22px 0 0 110px ; 
+	border-left : 1px solid #fff ; 
+}
+html>body #navlist li ul ul {        
+	border-left     : 1px solid transparent ; 
+}
+#navlist li:hover ul ul, #navlist li.sfhover ul ul {
+	left: -999em; 
+}
+
+#navlist li:hover ul, #navlist li li:hover ul, #navlist li.sfhover ul, #navlist li li.sfhover ul  {
+	left: auto;
+	min-height: 0;
+}
+
+/* Background content */
+/* ****************** */
+#content {
+	background-color:#FFF;
+	padding:20px;
+	margin-bottom: 20px;
+	border-radius: 10px;   /* rounded corner, news CSS3 property */
+	-moz-border-radius: 10px;   /* rounded corner for Gecko */
+	-webkit-border-radius: 10px; /* rounded corner for Safari and Konqueror */
+	border: 1px solid #CCC;
+	background-image: url(images/search.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+/* Pages navigation */
+/* *************** */
+.left a, .right a {
+	font: normal 13px Georgia, "Times New Roman", Times, serif;
+	color: #e04d88;
+}
+.left {
+	text-align:left;
+}
+.right {
+	text-align: right;
+}
+
+/* The posts */
+/* ********* */
+#left {	
+	float:left;
+	width: 580px;
+	margin-bottom: 20px;
+}
+#titre h1 {
+	margin-bottom: 3px;
+}
+#titre h1 a {
+	color:#a69c91;
+	font: bold 39px Arial, Helvetica, sans-serif;
+	letter-spacing: -2px;
+	text-decoration:none;
+}
+#titre h1 a:hover {
+	color: #785430;
+}
+#titre pre {
+	font: normal 11px "Courier New", Courier, monospace;
+	letter-spacing: 3px;
+	text-transform:uppercase;
+	color: #e04d88;
+	border-top: 1px dotted #ccc;
+	padding:10px 0 0 0;
+	margin: 0 0 25px 0;
+}
+#article h1, h2, h3, h4, h5, h6 { 
+	color:#785430;
+	letter-spacing: -1px;
+}
+#article h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+	color:#a69c91;
+}
+#article p {
+	line-height: 1.5em;
+	color: #666;
+	font-size: 90%;
+}
+#article p a {
+	color: #785430;
+	border-bottom: 1px dotted #70a624;
+	text-decoration:none;
+}
+#article p a:hover {
+	background-color: #EEECEA;
+}
+#article p.postmetadata {
+	margin-bottom: 80px;
+	font: 13px/20px Georgia, "Times New Roman", Times, serif
+}
+#article ul, ol {
+	font-size: 90%;
+	color: #666;
+}
+#article table {
+	border-collapse: collapse;
+}
+#article td, th {
+	color: #666;
+	font-size: 90%;
+	padding: 5px;
+	border: 1px solid #EAEAEA;
+}
+
+/* The comments */
+/* ************ */
+
+#respons .rounded {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color:#EEECEA;
+	border: 1px solid #978D80;
+	padding: 3px;
+}
+.commentlist .quote {   
+    background: url(images/bg_quote.gif) no-repeat top right ;   
+}   
+.commentlist li {   
+    padding: 5px 18px 22px 18px;   
+	border-radius:10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;   
+	-webkit-border-radius: 10px 10px 0 0; 
+	margin-top:15px;   
+    background:#EEECEA url(images/bg_commentlist.gif) bottom left no-repeat;   
+    color:#785430; 
+	height: 100px;
+}   
+html>body .commentlist li  {
+	height: auto;
+	min-height: 70px;
+} 
+.commentlist cite {   
+    display:block;   
+    font-style:normal;
+	padding-left: 20px;
+}   
+.commentlist cite a:link, .commentlist cite a:visited {   
+    color:#5cb4bc;   
+    text-decoration:none;   
+}   
+.commentlist cite a:hover, .commentlist cite a:active {     
+    text-decoration:underline;   
+    }  
+.commentlist img.avatar {
+	float:left;
+	margin-right: 10px;
+	border: 4px solid #fff;
+}
+
+/* The sidebar */
+/* *********** */
+#sidebar {
+	margin-left: 660px;
+}
+#sidebar ul {
+	list-style-type:none;
+	margin:auto !important;
+	margin: 10px;
+}
+#sidebar ul li h2 {
+	font: normal 37px/35px Arial, Helvetica, sans-serif;
+	letter-spacing: -2pt;
+	text-transform:lowercase;
+	color:#E8E8E8;
+	padding: 0;
+	margin: 30px 0 20px 0;
+}
+#sidebar ul li ul {
+	font: 15px Arial, Helvetica, sans-serif;
+	list-style-image: url(images/arrow.gif);
+	padding:0 24px;
+}
+#sidebar ul li ul li {
+	margin: 10px 0;
+}
+
+#sidebar ul li ul li a {
+	color: #5cb4bc;
+	text-decoration: none;
+	margin-left: 2px !important;
+	margin-left: 10px;
+}
+#sidebar ul li ul li a:hover {
+	text-decoration:underline;
+}
+#searchform {
+	color: #60dcdf;
+	text-align:center;
+	text-transform:uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+	margin:0 0 25px 0;
+	padding-right: 20px;
+}
+#sidebar .button {
+	color: #fff;
+	font-size:24px;
+	border: none;
+	background: none;
+	padding-top: 5px;
+}
+#sidebar .field {
+	border: 2px solid #60dcdf;
+	padding: 3px;
+	margin-top: 7px !important;
+	margin-top: 2px;
+}
+.widget_tag_cloud a {
+	color: #5cb4bc;
+	text-decoration: none;
+}
+#rss-img {    /* background image */ 
+	width : 91%; 
+	height: 35px;
+	background: url(images/rss.png) top center no-repeat; 
+	margin-top: 5px;
+} 
+#zone1 {    /* link zone */ 
+	width : 100%; 
+	height: 100%;
+	float: left;
+} 
+#twitter-img {    /* background image */
+	width : 91%; 
+	height: 35px; 
+	background: url(images/twitter.png) top center no-repeat;
+	margin-top: 5px;
+} 
+#zone2 {    /* link zone */ 
+	width : 100%; 
+	height: 100%; 
+	float: left;
+} 
+
+/* footer */
+#general {
+	clear:both;
+	font: 11px Tahoma, Geneva, sans-serif;
+	text-align: center;
+	color: #785430;
+	padding-top: 10px;
+	border-top: 1px dotted #ccc;
+	margin: 20px 0;
+}
+#general li {
+	display: inline;
+	list-style-type: none;
+	padding: 0 7px;
+	border-right: 1px solid #a69c91;
+}
+#general li a {
+	color: #B85;
+	border-bottom: 1px dotted #70a624;
+	text-decoration:none;
+}
+
+/* others - do NOT delete, needed since wordpress 2.5 */
+/* ************************************************** */
+.aligncenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.alignleft {
+float: left;
+}
+.alignright {
+float: right;
+}
+.wp-caption {
+border: 1px solid #ddd;
+text-align: center;
+background-color: #f3f3f3;
+padding-top: 4px;
+margin: 10px;
+-moz-border-radius: 3px;
+-khtml-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+.wp-caption img {
+margin: 0;
+padding: 0;
+border: 0 none;
+}
+.wp-caption-dd {
+font-size: 11px;
+line-height: 17px;
+padding: 0 4px 5px;
+margin: 0;
+}

@@ -1,0 +1,332 @@
+/*
+	CSS files kept in the 'schemes' directory can be used to
+	costumize your K2 installation without having to mess
+	with the core K2 files. This in turn makes it easier to
+	upgrade to new K2 version as well as debug any problems
+	that might occur.
+
+	You select schemes from the K2 Options page in the
+	'Presentation' section of your WordPress administration.
+	
+	Author Name	: Eston Bond </a> &amp; <a href='http://www.uguz.net/demo/'>Caner Uguz</a>
+	Author Site	: http://hyalineskies.com
+	Style Name	: Gridlock-K2
+	Style URI	: http://hyalineskies.com/wordpress/gridlock-k2/
+	Version		: 1.0
+	Comments	: A conversion of the hyalineskies Gridlock design by Eston Bond to a K2 style by Caner Uguz.  
+
+*/
+
+
+body {
+        background: #999 !important;
+		background-image: "images/cell_bg.png" repeat-x repeat-y;
+		color: #000;
+}
+
+
+	a:link { 
+		color: #186fd0;
+		text-decoration: none;
+	}
+
+		a:hover, a:active {
+			color: #186fd0;
+			text-decoration: underline;
+		}
+
+		a:visited, .primary a:visited, .content a:visited {
+			color: #666;
+			text-decoration: none;
+		}
+
+/* Main Layout Layers */
+
+#page {
+	/* The entire design is contained within the 'page' id */
+	background: #999  url(images/whiteback.gif) center repeat-y !important;
+	border: none !important;
+	padding-top: 0px !important;
+	width: 940px !important;
+	}
+	
+#header {
+	/* Contains the H1 and menu or Masthead in the original Gridlock */
+	background: #fff url(headers/rotate.php) bottom repeat-x !important;
+	height: 140px !important;
+	margin-left: 80px !important;
+	margin-right: 80px !important;
+	}
+	
+#primary {
+	/* Contains the main column */
+        margin-left: 75px !important;
+		text-align: left; 
+		width: 450px;
+	}
+
+.secondary {
+	/* Contains the Sidebar */
+	padding-top: 12px !important;
+	width: 0px	0px !important;
+	padding-right: 0px !important;
+	margin: 0 0 0 600px !important;
+	_margin: 0 0 20px 637px !important; /* What's this about, Caner? */
+	text-align: right;
+	float: right;
+	position: absolute;
+}
+
+/* The main Page links menu on the Header or navigation in the original Gridlock */
+
+ul.menu {
+	font-family: Helvetica, Arial, sans-serif !important; 
+	margin: 0px !important;
+	padding: 0px !important;
+    padding-left: 20px !important;
+	position: absolute;
+	bottom: 0;
+	left: 0px !important;
+	width: 760px;
+	background: #333 url(images/upper_bg.gif) bottom repeat-x !important;
+	opacity: .8;
+	border-top: 0px solid #ccc !important;
+	border-bottom: 1px solid #ccc !important;
+	}
+
+ul.menu li {
+	display: inline;
+ 	margin: 0px;
+    margin-left: -3px !important;
+	padding: 0px !important;
+    height: 25px !important;   
+	}
+
+ul.menu, 
+ul.menu li a {
+	padding: 9px 3px 8px 13px ;
+	margin: 0px !important;
+	}
+
+ul.menu li a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold !important;
+	font-size: 10px  !important;
+    line-height: 28px !important;
+	color: #eee !important;
+	margin: 0px !important;
+	padding-left: 10px !important;
+	border-right: 1px solid #ccc !important;
+	letter-spacing: 7px !important;
+	text-transform: lowercase !important;
+	text-align:center;
+	}
+
+ul.menu li a:visited {
+	text-decoration: none;
+}
+
+ul.menu li a:hover {
+	background: none !important;
+	color: #186FD0 !important;
+	text-decoration: none;
+	}
+
+ul.menu li.current_page_item a,
+ul.menu li.current_page_item a:hover  {
+	background: #666 !important;
+	text-decoration: none;
+	color: #eee !important;
+	}
+
+.admintab {
+        display: none !important;
+	}
+
+/* Main blog Header and Description */
+
+
+@font-face {
+    font-family:"ESt"; 
+	src:url('http://flyingoctopus.net/assets/fonts/Salsa%20Mangos%20BTN%20Lt.ttf');
+}
+
+h1 { /* H1 is the title in the header */
+	font-family: ESt, sans-serif;
+	font-size: 6.3em;
+	font-weight: normal;
+	text-shadow: white 2px 2px 20px, white -2px -2px 20px;
+	letter-spacing: -2px;
+	margin: 0 0 0 -14px;
+	padding: 24px 40px 0 !important;
+	}
+
+h1, h1 a {
+	text-decoration: none;
+    color: #333 !important;
+}
+
+	h1 a { margin-left: -10px; }
+	h1 a:hover { 
+		color: #186fd0 !important;
+	}
+
+#header .description {
+	font: 11px/13px Helvetica, Arial, sans-serif !important;
+	margin-top: 15px;
+	text-decoration: none;
+	color: #666 !important; /* Change to 333 after */
+	}
+
+h1 a:hover {
+	text-decoration: none !important;
+	}
+
+#header .description { /* Description in header */
+	font-size: 1em;
+	margin: 5px 40px 40px 18px;
+	}
+
+
+/* Other Headers and Text*/
+
+.entry-content p { color: #000 !important; }
+
+#primary h3, #primary h4, .single #primary .k2-asides h3  { /* H3 is entry headlines. H4 is comments and replyform headlines */
+	font-size: 2.2em !important;
+	font-family: Helvetica, Arial, sans-serif;
+	padding-bottom: 5px;
+	}
+	
+	#primary h3 a, #primary h4 a, .single #primary .k2-asides h3 a {
+		color: #333 !important;
+		text-decoration: none;
+	}
+
+blockquote {
+	background: none !important;
+}
+
+.entry-content { /* This is the main post content */
+	font-size: 1.2em !important;
+	line-height: 1.7em !important;
+	text-align: left !important;
+        border-bottom: 2px solid #333 !important;
+	}
+
+h2, h2 a { /* H2 is what kind of page you are on. Eg. 'Monthly Archive'. */
+	text-align: left !important;
+	font-family: Helvetica, Arial, sans-serif;
+	text-decoration: none !important;
+	font-weight: normal;
+	color: #333;
+	}
+	
+.secondary h2 { /* Secondary H2 is sidebar headlines */
+	font-family: Helvetica, Arial, sans-serif !important;
+	letter-spacing: normal;
+	color: #333 !important;
+	margin: 0 0 10px 0!important;
+	padding: 0 0 5px 0!important;	
+        font-size: 1.5em !important;
+	font-weight: normal !important;
+        text-align: left !important;
+	display: block !important;
+        border-bottom: 1px solid #ccc;
+	}
+
+/* The About box on the sidebar */
+
+.sb-about { 
+         background: #333 url(images/about.gif) top left no-repeat;
+         padding-top: 30px !important;
+         padding-left: 6px !important;
+         padding-bottom: 5px !important;
+         border-bottom: 3px solid #ccc;
+         border-top: 3px solid #ccc;
+         font-size: 11px;
+         text-align: left;
+         color: #eee;
+         line-height: 14px;
+         margin: 0 0 10px 0;
+
+}
+
+.sb-about h2 { /* Hides the about title because we use an image instead */
+	display: none !important;
+	}
+
+
+/* Footer */
+
+#footer {
+        background: #333 url(images/footerback.gif) repeat-y !important;
+        color: #eee !important;
+        width: 940px !important;
+        margin: 0 auto !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+}
+
+#footer a {
+	text-decoration: none !important;
+	}
+
+#footer a:hover {
+        color: #fff !important;
+	text-decoration: none;
+	}
+
+
+
+/* The Search box on the sidebar */
+
+#search h2 {  
+	display: none !important;
+	text-align: right;
+	}
+
+#searchreset {
+	right: 0px !important;
+	top: 0px !important;
+	}
+
+#searchload {
+	right: 0px !important;
+	top: 0px !important;
+	}
+
+#searchform {
+        /*background: #333 !important;*/
+        /*border-bottom: 2px solid #ccc !important;
+        border-top: 2px solid #ccc !important;*/
+	}
+	
+input[type=text], textarea {
+	color: #444;
+	padding: 3px !important;
+	width: 145px !important;
+	/*height:10px;*/
+	right: 25px;
+	bottom:0px;
+	_width: 145px;
+	}
+
+
+/* Comments */
+
+.comments form #submit {
+	margin: 0;
+	float: left !important;
+        border: 2px solid #333 !important;
+        width: 100px !important;
+        background: #fff !important;	
+        }
+
+#commentlist li {
+        border-top: 1px solid #999 !important;
+        }
+
+.comments textarea {
+	width: 400px !important;
+	}
